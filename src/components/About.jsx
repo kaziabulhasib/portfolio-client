@@ -6,9 +6,10 @@ const About = () => {
     <div id='about'>
       <SectionTitle title='about me' text='Get to more about me'></SectionTitle>
       <h1 className='w-1/2 mx-auto text-center mt-8'>
-        Aspiring data analyst completed Google Data Analytics Professional
-        Certification hosted by Coursera. Looking for my first job as an
-        entry-level analyst.
+        Aspiring junior web developer specializing in front-end technologies
+        with a robust foundation in HTML, CSS, JavaScript, React, and Tailwind
+        CSS. Also skilled in backend development utilizing Node.js, Express, and
+        MongoDB.
       </h1>
       <div className='flex justify-center gap-36 mt-12 mb-24 '>
         {/* Experience */}
