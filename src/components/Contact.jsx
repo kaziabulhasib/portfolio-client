@@ -1,7 +1,10 @@
+import SectionTitle from "./SectionTitle";
+
 const Contact = () => {
   return (
+    // This section needs reconsider
     <div id='contact' className='h-[500px]'>
-      <h1 className='text-3xl text-center'>Contact</h1>
+      <SectionTitle title='Contact Me' text='Get in touch'></SectionTitle>
     </div>
   );
 };
