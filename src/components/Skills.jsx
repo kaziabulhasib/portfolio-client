@@ -1,37 +1,60 @@
 import SectionTitle from "./SectionTitle";
 import SkillsSubSec from "./SkillsSubSec";
 
+const skillsData = [
+  {
+    skill: "HTML",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  },
+  {
+    skill: "CSS",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  },
+  {
+    skill: "JavaScript",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  },
+  {
+    skill: "React",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+  {
+    skill: "Tailwind",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+  },
+  {
+    skill: "MongoDB",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  },
+  {
+    skill: "Express",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  },
+  // to do: add icons
+  {
+    skill: "Firebase",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg",
+  },
+  // {
+  //   skill: "ReactQuery",
+  //   img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  // },
+  // {
+  //   skill: "JWT",
+  //   img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jwt/jwt-original.svg",
+  // },
+];
+
 const Skills = () => {
   return (
-    <div id='skills' className='h-[500px]'>
+    <div id='skills'>
       <SectionTitle title='Skills' text='Explore My'></SectionTitle>
-      <div className='flex justify-center gap-16'>
-        <div className='p-6 border rounded-2xl'>
-          <h1 className='font-semibold text-2xl mb-6 text-center'>
-            Web Development
-          </h1>
-          <div className='grid grid-cols-3 gap-8  gap-y-24 '>
-            <SkillsSubSec skill='HTML' level='Experienced'></SkillsSubSec>
-            <SkillsSubSec skill='CSS' level='Experienced'></SkillsSubSec>
-            <SkillsSubSec skill='JAVASCRIPT' level='Experienced'></SkillsSubSec>
-            <SkillsSubSec skill='REACT' level='INTERMEDIATE'></SkillsSubSec>
-            <SkillsSubSec skill='TAILWIND' level='Experienced'></SkillsSubSec>
-            <SkillsSubSec skill='EXPRESS' level='Basic'></SkillsSubSec>
+      <div className='grid grid-rows-3 grid-flow-col gap-16 w-2/3 mx-auto   justify-evenly  my-24'>
+        {skillsData.map((skill, index) => (
+          <div key={index}>
+            <SkillsSubSec skill={skill.skill} img={skill.img}></SkillsSubSec>
           </div>
-        </div>
-        <div className='p-6 border rounded-2xl'>
-          <h1 className='font-semibold text-2xl mb-6 text-center'>
-            Web Development
-          </h1>
-          <div className='grid grid-cols-3 gap-8  gap-y-24 '>
-            <SkillsSubSec skill='HTML' level='Experienced'></SkillsSubSec>
-            <SkillsSubSec skill='CSS' level='Experienced'></SkillsSubSec>
-            <SkillsSubSec skill='JAVASCRIPT' level='Experienced'></SkillsSubSec>
-            <SkillsSubSec skill='REACT' level='INTERMEDIATE'></SkillsSubSec>
-            <SkillsSubSec skill='TAILWIND' level='Experienced'></SkillsSubSec>
-            <SkillsSubSec skill='EXPRESS' level='Basic'></SkillsSubSec>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
