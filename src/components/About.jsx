@@ -1,30 +1,52 @@
 import SectionTitle from "./SectionTitle";
-import { SlBadge } from "react-icons/sl";
-import { PiGraduationCap } from "react-icons/pi";
+
 const About = () => {
   return (
     <div id='about'>
       <SectionTitle title='about me' text='Get to more about me'></SectionTitle>
-      <h1 className='w-1/2 mx-auto text-center mt-8'>
-        Aspiring junior web developer specializing in front-end technologies
-        with a robust foundation in HTML, CSS, JavaScript, React, and Tailwind
-        CSS. Also skilled in backend development utilizing Node.js, Express, and
-        MongoDB.
-      </h1>
-      <div className='flex justify-center gap-36 mt-12 mb-24 '>
-        {/* Experience */}
-        <div className='flex flex-col items-center border border-gray-500 px-32 py-6 rounded-3xl space-y-3'>
-          <SlBadge className='text-7xl font-extrabold ' />
-          <h1 className='font-bold text-4xl'>Experience</h1>
-          <h2>Fresher</h2>
-          <h1 className='text-xl font-medium'>Front End Development</h1>
-        </div>
-        {/* Education */}
-        <div className='flex flex-col items-center border border-gray-500  px-32 py-6 rounded-3xl space-y-3'>
-          <PiGraduationCap className='text-7xl font-extrabold ' />
-          <h1 className='font-bold text-4xl'>Education</h1>
-          <h2>Bsc Mathematics</h2>
-          <h1 className='text-xl font-medium'>NSOU</h1>
+      <div>
+        <div className='w-1/2 mx-auto text-[18px] space-y-4 py-16 px-24 border rounded-xl my-8 '>
+          <p>
+            Hi, I’m
+            <span className='text-blue-700 font-medium italic ml-2'>
+              Kazi Abul Hasib
+            </span>
+            , a junior web developer specializing in front-end development with
+            a growing proficiency in back-end technologies.
+          </p>
+          <p className='font-semibold text-xl'>🌟 Core Skills:</p>
+          <p>
+            <span className='text-blue-700 font-medium'>Front-End:</span>
+            <span className='italic font-medium ml-4'>
+              HTML, CSS, Tailwind, JavaScript, React, DOM,ReactQuery
+            </span>
+          </p>
+          <p>
+            <span className='text-blue-700 font-medium'>Back-End:</span>
+            <span className='italic font-medium ml-4'>
+              Express, MongoDB, JWT
+            </span>
+          </p>
+          <p>
+            With these skills, I create visually appealing and responsive
+            websites. My experience extends to building full-stack applications,
+            where I've successfully implemented authentication systems and
+            integrated Firebase for its robust authentication capabilities.
+            Additionally, I've utilized Stripe for payment processing and
+            designed admin dashboards to manage application functionalities.
+          </p>
+          <p>
+            <span className='text-blue-700 font-medium'>
+              🚀 Currently Exploring:
+            </span>
+            <span className='italic font-medium ml-4'>
+              Next.js, Redux, TypeScript.
+            </span>
+          </p>
+          <p className='font-medium italic'>
+            I'm enthusiastic about mastering these technologies and continually
+            enhancing my coding abilities.
+          </p>
         </div>
       </div>
     </div>

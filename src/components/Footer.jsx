@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -6,7 +6,7 @@ const Footer = () => {
     <div>
       <footer className='bg-white dark:bg-gray-900 border-t shadow-md'>
         <div className='container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row'>
-          <a href='#'>
+          <a>
             <img className='w-auto h-7' src='/images/profile-pic.png' alt='' />
           </a>
 
@@ -21,7 +21,6 @@ const Footer = () => {
           <div className='flex -mx-2'>
             <Link
               to='https://github.com/kaziabulhasib'
-              href='#'
               className='mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400'
               aria-label='Github'>
               {/* git hub */}
@@ -34,6 +33,12 @@ const Footer = () => {
               className='mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400'
               aria-label='Linkedin'>
               <FaLinkedinIn className='text-2xl' />
+            </Link>
+            <Link
+              to='https://www.facebook.com/profile.php?id=100075689694652'
+              className='mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400'
+              aria-label='Facebook'>
+              <FaFacebook className='text-2xl' />
             </Link>
           </div>
         </div>
