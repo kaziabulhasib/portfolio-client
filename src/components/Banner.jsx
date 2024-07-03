@@ -25,10 +25,11 @@ const Banner = () => {
 
             <div className='flex justify-center mt-6 space-y-3 lg:space-y-0 lg:flex-row'>
               <a
-                href='https://www.canva.com/design/DAF4he9S_rk/fhLe9Qkkc5E-GQ1lXGTRPw/view?utm_content=DAF4he9S_rk&utm_campaign=designshare&utm_medium=link&utm_source=editor'
+                href='/cv.pdf'
+                download='KaziAbulHasibCV.pdf'
                 target='_blank'
                 className='block px-5 py-2 text-sm font-medium tracking-wider text-center text-white transition-colors duration-300 transform bg-gray-900 rounded-md hover:bg-gray-700'>
-                Check Cv
+                Download Cv
               </a>
               <a
                 href='https://github.com/kaziabulhasib'

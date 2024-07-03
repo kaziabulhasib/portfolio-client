@@ -16,7 +16,7 @@ const NavBar = () => {
               to='/'
               // onClick={handleClick}
               className='text-3xl font-semibold'>
-              Hasib Kazi
+              Hasib
             </Link>
 
             {/* Mobile menu button */}
