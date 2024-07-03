@@ -5,6 +5,7 @@ const About = () => {
     <div id='about'>
       <SectionTitle title='about me' text='Get to more about me'></SectionTitle>
       <div>
+        {/* to do: simple animation */}
         <div className='w-1/2 mx-auto text-[18px] space-y-4 py-16 px-24 border rounded-xl my-8 '>
           <p>
             Hi, I’m
