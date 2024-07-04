@@ -15,6 +15,13 @@ const About = () => {
             , a junior web developer specializing in front-end development with
             a growing proficiency in back-end technologies.
           </p>
+          {/* education */}
+          <p>
+            <span className='text-blue-700 font-medium'>📚 Education:</span>
+            <span className='italic font-medium ml-4'>
+              Higher Secondary from WBBSE
+            </span>
+          </p>
           <p className='font-semibold text-xl'>🌟 Core Skills:</p>
           <p>
             <span className='text-blue-700 font-medium'>Front-End:</span>
