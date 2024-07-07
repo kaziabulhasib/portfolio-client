@@ -35,10 +35,10 @@ const Contact = () => {
       {/* contact */}
       <section className='bg-white dark:bg-gray-900'>
         <div className='container lg:px-48 px-6 py-12 mx-auto'>
-          <div className='lg:flex lg:items-center lg:-mx-6'>
-            <div className='lg:w-1/2 lg:mx-6'>
+          <div className='lg:flex  lg:items-center lg:-mx-6'>
+            <div className='lg:w-1/2 lg:mx-6 lg:text-left text-center'>
               <h1 className='text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl'>
-                Contact Me for <br /> more info
+                Contact for more info
               </h1>
 
               <div className='mt-6 space-y-8 md:mt-8'>
