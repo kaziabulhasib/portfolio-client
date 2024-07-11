@@ -88,6 +88,11 @@ const NavBar = () => {
                 Contact
               </a>
             </div>
+            <input
+              type='checkbox'
+              className='toggle border-gray-500 dark:border-slate-200 bg-blue-500 [--tglbg:white] hover:bg-blue-700'
+              defaultChecked
+            />
 
             {/* <div className='flex justify-center md:block'>
               <a
