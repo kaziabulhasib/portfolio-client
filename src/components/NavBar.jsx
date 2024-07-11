@@ -88,7 +88,7 @@ const NavBar = () => {
                 Contact
               </a>
             </div>
-
+            <p>Dark mood toggle</p>
             {/* <div className='flex justify-center md:block'>
               <a
                 className='relative text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300'
