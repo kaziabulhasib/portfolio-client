@@ -8,7 +8,7 @@ const About = () => {
         {/* to do: simple animation */}
         <div className='lg:w-1/2 w-full mx-auto text-[18px] space-y-4 py-16 lg:px-24 px-4 border rounded-xl mt-8 mb-16 '>
           <p>
-            Hi, I’m
+            Hi, I am
             <span className='text-blue-700 font-medium italic ml-2'>
               Kazi Abul Hasib
             </span>
