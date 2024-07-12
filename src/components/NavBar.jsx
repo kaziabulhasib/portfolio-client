@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import ThemeControler from "./ThemeControler";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +16,7 @@ const NavBar = () => {
             <Link
               to='/'
               // onClick={handleClick}
-              className='text-3xl font-semibold'>
+              className='text-3xl font-semibold dark:text-white'>
               Hasib
             </Link>
 
@@ -88,12 +89,13 @@ const NavBar = () => {
                 Contact
               </a>
             </div>
-            <input
+            {/* <input
               type='checkbox'
               className='toggle border-gray-500 dark:border-slate-200 bg-blue-500 [--tglbg:white] hover:bg-blue-700'
               defaultChecked
-            />
-
+            /> */}
+            {/* theme controler  */}
+            <ThemeControler />
             {/* <div className='flex justify-center md:block'>
               <a
                 className='relative text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300'
