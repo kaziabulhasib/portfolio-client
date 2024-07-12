@@ -1,7 +1,8 @@
 import profilePic from "../../public/images/profile-pic.png";
+
 const Banner = () => {
   return (
-    <header className='bg-white dark:bg-gray-900'>
+    <header className=' '>
       <div className='lg:flex  lg:justify-center lg:items-center lg:px-24 px-4 lg:my-24 my-8 '>
         <div className='w-full h-64 lg:w-1/4 lg:h-96'>
           <div

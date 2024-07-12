@@ -1,10 +1,11 @@
 import SectionTitle from "./SectionTitle";
+import "./AnimatedText.css";
 
 const About = () => {
   return (
     <div id='about'>
       <SectionTitle title='about me' text='Get to more about me'></SectionTitle>
-      <div>
+      <div className='animated-text'>
         {/* to do: simple animation */}
         <div className='lg:w-1/2 w-full mx-auto text-[18px] space-y-4 py-16 lg:px-24 px-4 border rounded-xl mt-8 mb-16 '>
           <p>

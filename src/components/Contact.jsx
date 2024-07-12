@@ -33,7 +33,7 @@ const Contact = () => {
     <div id='contact'>
       <SectionTitle title='Contact Me' text='Get in touch'></SectionTitle>
       {/* contact */}
-      <section className='bg-white dark:bg-gray-900'>
+      <section>
         <div className='container lg:px-48 px-6 py-12 mx-auto'>
           <div className='lg:flex  lg:items-center lg:-mx-6'>
             <div className='lg:w-1/2 lg:mx-6 lg:text-left text-center'>
@@ -143,7 +143,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        
       </section>
     </div>
   );

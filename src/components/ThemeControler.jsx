@@ -1,10 +1,25 @@
+import { useEffect, useState } from "react";
+
 const ThemeControler = () => {
+  const [theme, setTheme] = useState("light");
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+    const localTheme = localStorage.getItem("theme");
+    document.querySelector("html").setAttribute("data-theme", localTheme);
+  }, [theme]);
+  const handleToggle = (e) => {
+    if (e.target.checked) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
   return (
     <div>
       <label className='grid cursor-pointer place-items-center'>
         <input
+          onClick={handleToggle}
           type='checkbox'
-          value='synthwave'
           className='toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1'
         />
         <svg
