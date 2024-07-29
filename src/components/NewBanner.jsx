@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import profilePic from "../../public/images/profile-pic.png";
+import Buttons from "./Buttons";
+
 const NewBanner = () => {
   return (
     <header className=' '>
@@ -21,31 +23,19 @@ const NewBanner = () => {
             </h2>
 
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-              mollitia commodi hic quo architecto, quasi qui aut voluptatibus
-              repellendus animi, asperiores similique quas. Quis veritatis,
-              ipsam quo, nisi est consectetur quas voluptatibus tempora
-              necessitatibus illum provident cumque quibusdam saepe. Molestiae?{" "}
+              Hi, I’m Hasib, a junior web developer specializing in front-end
+              development with a growing proficiency in back-end technologies.
+              My core skills include React, Tailwind and JavaScript.In back-end
+              development, I have experience with Express, MongoDB and Node.{" "}
               <br />
               <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-              dolore explicabo deleniti, alias repellendus ad!
+              <span className='text-blue-600 text-sm'>
+                {" "}
+                For more details Check my Resume or Github or Linkedin.
+              </span>
             </p>
 
-            <div className='flex justify-start mt-6 space-y-3 lg:space-y-0 lg:flex-row'>
-              <Link
-                to='https://drive.google.com/file/d/1bAeIlhg9aJoDKcaQzi3T5xRpRGDI1zTa/view'
-                target='_blank'
-                className='block px-5 py-2 text-sm font-medium tracking-wider text-center text-white transition-colors duration-300 transform bg-gray-900 rounded-md hover:bg-gray-700'>
-                Download Cv
-              </Link>
-              <a
-                href='https://github.com/kaziabulhasib'
-                target='_blank'
-                className='block px-5 py-2 text-sm font-medium tracking-wider text-center text-gray-700 transition-colors duration-300 transform bg-gray-200 rounded-md lg:mx-4 hover:bg-gray-300'>
-                Github
-              </a>
-            </div>
+            <Buttons />
           </div>
         </div>
       </div>

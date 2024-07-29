@@ -1,4 +1,4 @@
-import About from "../components/About";
+// import About from "../components/About";
 // import Banner from "../components/Banner";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -11,7 +11,7 @@ const Home = () => {
     <div>
       {/* <Banner></Banner> */}
       <NewBanner></NewBanner>
-      <About></About>
+      {/* <About></About> */}
 
       <Skills></Skills>
       <Projects></Projects>
