@@ -2,18 +2,18 @@ import { useEffect, useState } from "react";
 
 const ThemeControler = () => {
   const [theme, setTheme] = useState("light");
+
   useEffect(() => {
     localStorage.setItem("theme", theme);
     const localTheme = localStorage.getItem("theme");
     document.querySelector("html").setAttribute("data-theme", localTheme);
   }, [theme]);
+
   const handleToggle = (e) => {
-    if (e.target.checked) {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
+    setTheme(e.target.checked ? "dark" : "light");
   };
+  console.log(theme);
+
   return (
     <div>
       <label className='grid cursor-pointer place-items-center'>

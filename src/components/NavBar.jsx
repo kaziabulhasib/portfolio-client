@@ -4,9 +4,6 @@ import ThemeControler from "./ThemeControler";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // const handleClick = () => {
-  //   window.location.reload();
-  // };
 
   return (
     <div>
