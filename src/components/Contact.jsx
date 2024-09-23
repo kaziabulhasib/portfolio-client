@@ -36,8 +36,8 @@ const Contact = () => {
       <section>
         <div className='container lg:px-48 px-6 py-12 mx-auto'>
           <div className='lg:flex  lg:items-center lg:-mx-6'>
-            <div className='lg:w-1/2 lg:mx-6 lg:text-left text-center'>
-              <h1 className='text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl'>
+            <div className='lg:w-1/2 lg:mx-6 lg:text-left text-center  dark:border-2 dark:border-gray-300 py-24 px-8'>
+              <h1 className='text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl  '>
                 Contact for more info
               </h1>
 

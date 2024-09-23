@@ -1,12 +1,35 @@
 import { useEffect, useState } from "react";
 
 const ThemeControler = () => {
-  const [theme, setTheme] = useState("light");
+  // Initialize theme:
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      return savedTheme;
+    } else {
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      return prefersDark ? "dark" : "light";
+    }
+  });
+
   useEffect(() => {
+    // Save the theme to localStorage
     localStorage.setItem("theme", theme);
-    const localTheme = localStorage.getItem("theme");
-    document.querySelector("html").setAttribute("data-theme", localTheme);
+
+    // Apply the theme to the document's root element (html)
+    document.querySelector("html").setAttribute("data-theme", theme);
+
+    // Add or remove the "dark" class based on the theme
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
   }, [theme]);
+
+  // Handle the toggle switch
   const handleToggle = (e) => {
     if (e.target.checked) {
       setTheme("dark");
@@ -14,11 +37,12 @@ const ThemeControler = () => {
       setTheme("light");
     }
   };
+
   return (
     <div>
       <label className='grid cursor-pointer place-items-center'>
         <input
-          onClick={handleToggle}
+          onChange={handleToggle}
           type='checkbox'
           className='toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1'
         />
