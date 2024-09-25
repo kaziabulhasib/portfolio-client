@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 const ThemeControler = () => {
+<<<<<<< HEAD
   // Initialize theme:
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -13,6 +14,9 @@ const ThemeControler = () => {
       return prefersDark ? "dark" : "light";
     }
   });
+=======
+  const [theme, setTheme] = useState("light");
+>>>>>>> 5e1c339c7e89abc5c8cd3531fe45988bdfb4cd71
 
   useEffect(() => {
     // Save the theme to localStorage
@@ -29,14 +33,17 @@ const ThemeControler = () => {
     }
   }, [theme]);
 
+<<<<<<< HEAD
   // Handle the toggle switch
+=======
+>>>>>>> 5e1c339c7e89abc5c8cd3531fe45988bdfb4cd71
   const handleToggle = (e) => {
-    if (e.target.checked) {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
+    setTheme(e.target.checked ? "dark" : "light");
   };
+<<<<<<< HEAD
+=======
+  console.log(theme);
+>>>>>>> 5e1c339c7e89abc5c8cd3531fe45988bdfb4cd71
 
   return (
     <div>
