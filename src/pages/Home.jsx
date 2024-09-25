@@ -9,12 +9,7 @@ import Skills from "../components/Skills";
 const Home = () => {
   return (
     <div>
-      {/* <Banner></Banner> */}
       <NewBanner></NewBanner>
-      {/* <About></About> */}
-      {/* <h1 className='text-3xl text-center text-blue-400 dark:text-red-500'>Experiment</h1> */}
-
-      <h1 className='text-3xl text-center'>Experiment branch code</h1>
 
       <Skills></Skills>
       <Projects></Projects>
