@@ -1,16 +1,13 @@
 import { useEffect, useState } from "react";
 
 const ThemeControler = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
-    // Save the theme to localStorage
     localStorage.setItem("theme", theme);
 
-    // Apply the theme to the document's root element (html)
     document.querySelector("html").setAttribute("data-theme", theme);
 
-    // Add or remove the "dark" class based on the theme
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
@@ -27,8 +24,10 @@ const ThemeControler = () => {
     <div>
       <label className='grid cursor-pointer place-items-center'>
         <input
+          value='checked'
           onChange={handleToggle}
           type='checkbox'
+          checked={theme === "dark"}
           className='toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1'
         />
         <svg

@@ -16,9 +16,12 @@ const NewBanner = () => {
         <div className='flex items-center justify-center w-full px-6 py-8 lg:h-[32rem] lg:w-1/2'>
           <div className='max-w-xl text-left space-y-4'>
             <h1 className='text-3xl font-semibold'>
-              Hello I'm <span className='text-blue-600'>Kazi Abul Hasib</span>
+              Hello I'm{" "}
+              <span className='text-blue-600 dark:text-blue-400'>
+                Kazi Abul Hasib
+              </span>
             </h1>
-            <h2 className='text-2xl font-normal text-blue-600'>
+            <h2 className='text-2xl font-normal text-blue-600 dark:text-blue-400'>
               Junior Web Developer
             </h2>
 
@@ -29,7 +32,7 @@ const NewBanner = () => {
               development, I have experience with Express, MongoDB and Node.{" "}
               <br />
               <br />
-              <span className='text-blue-600 text-sm'>
+              <span className='text-blue-600 dark:text-white text-sm'>
                 {" "}
                 For more details Check my Resume or Github or Linkedin.
               </span>
