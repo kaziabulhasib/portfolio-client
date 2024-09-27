@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Buttons = () => {
   return (
-    <div className=' max-w-[75%] my-8'>
+    <div className=' lg:max-w-[75%] w-full my-8'>
       <div className='flex border overflow-hidden bg-white  divide-x rounded-lg rtl:flex-row-reverse dark:bg-gray-900 dark:border-gray-700 dark:divide-gray-700 '>
         <Link
           to='https://drive.google.com/file/d/1bAeIlhg9aJoDKcaQzi3T5xRpRGDI1zTa/view'
