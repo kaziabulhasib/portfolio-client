@@ -1,11 +1,10 @@
-import { Link } from "react-router-dom";
 import profilePic from "../../public/images/profile-pic.png";
 import Buttons from "./Buttons";
 
 const NewBanner = () => {
   return (
     <header className=' '>
-      <div className='flex  justify-center items-center  lg:my-6'>
+      <div className='flex lg:flex-row flex-col  justify-center items-center  lg:my-6'>
         <div className='w-full h-64 lg:w-1/4 lg:h-96 flex items-center'>
           <div
             className='lg:w-56 lg:h-56 w-36 h-36 bg-cover rounded-full mx-auto '
@@ -16,7 +15,7 @@ const NewBanner = () => {
         <div className='flex items-center justify-center w-full px-6 py-8 lg:h-[32rem] lg:w-1/2'>
           <div className='max-w-xl text-left space-y-4'>
             <h1 className='text-3xl font-semibold'>
-              Hello I'm{" "}
+              Hello I'm <br />
               <span className='text-blue-600 dark:text-blue-400'>
                 Kazi Abul Hasib
               </span>
