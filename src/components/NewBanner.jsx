@@ -12,7 +12,7 @@ const NewBanner = () => {
               backgroundImage: `url(${profilePic})`,
             }}></div>
         </div>
-        <div className='flex items-center justify-center w-full px-6 py-8 lg:h-[32rem] lg:w-1/2 border lg:border-none'>
+        <div className='flex items-center justify-center w-full px-6 py-8 lg:h-[32rem] lg:w-1/2 '>
           <div className='max-w-xl text-left space-y-4'>
             <h1 className='text-3xl font-semibold'>
               Hello I'm <br />
