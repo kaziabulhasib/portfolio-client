@@ -28,7 +28,8 @@ const skillsData = [
   },
   {
     skill: "Express",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    // img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    img: "https://i.ibb.co/cFCYZ7W/express-dark-logo.jpg",
   },
   // to do: add icons
   {
