@@ -5,6 +5,37 @@ const Projects = () => {
   // Sample project data
   const projectsData = [
     {
+      title: "BistroBoss",
+      img: "https://i.ibb.co/bvVmX90/cafe-image.jpg",
+      link: "https://bistro-boss-500ab.web.app/",
+      code: "https://github.com/kaziabulhasib/bistro-boss-client",
+      overview: `
+        
+        <p><strong>BistroBoss</strong> is a user-friendly food ordering platform that brings a variety of delicious options right to your fingertips. Customers can explore our extensive menu, place orders effortlessly, and make secure payments through our integrated payment system. With access to a personal dashboard, users can easily manage orders, view past purchases, and enjoy an enhanced, organized dining experience. </p>
+      `,
+      technologyUsed: `
+        
+        <ul>
+          <li>HTML</li>
+          <li>Tailwind CSS</li>
+          <li>React</li>
+          <li>Express</li>
+          <li>MongoDB</li>
+          <li>React Query</li>
+          <li>Firebase Authentication</li>
+          <li>Stripe</li>
+        </ul>
+      `,
+      features: `
+        
+        <ul>
+          <li>Easy registration & user profiles</li>
+          <li>Powerful search with filters</li>
+          <li>Up/downvote system for community curation</li>
+        </ul>
+      `,
+    },
+    {
       title: "TalkRoute",
       img: "https://i.ibb.co/N3xgbt0/talkroute-snap2.png",
       link: "https://talk-route.web.app/",
@@ -66,35 +97,35 @@ const Projects = () => {
         </ul>
       `,
     },
-    {
-      title: "PrimesquareProperty",
-      img: "https://i.ibb.co/Mf43JTd/primesquare-snap.png",
-      link: "https://assignment9-realestate.netlify.app/",
-      code: "https://github.com/kaziabulhasib/ph-assignment9",
-      overview: `
-        
-        <p><strong>PrimesquareProperty</strong> is a USA-based real estate website specializing in property sales. Users can browse and purchase from an extensive collection of properties, conveniently categorized into various subcategories to enhance user experience.</p>
-      `,
-      technologyUsed: `
-        
-        <ul>
-          <li>HTML</li>
-          <li>Tailwind CSS</li>
-          <li>React</li>
-          <li>React Router Dom</li>
-          <li>React Helmet</li>
-          <li>Firebase Authentication</li>
-        </ul>
-      `,
-      features: `
-        
-        <ul>
-          <li>Extensive Property Listings</li>
-          <li>Expert Guidance and Resources</li>
-          <li>Responsive Design and User-Friendly Interface</li>
-        </ul>
-      `,
-    },
+    // {
+    //   title: "PrimesquareProperty",
+    //   img: "https://i.ibb.co/Mf43JTd/primesquare-snap.png",
+    //   link: "https://assignment9-realestate.netlify.app/",
+    //   code: "https://github.com/kaziabulhasib/ph-assignment9",
+    //   overview: `
+
+    //     <p><strong>PrimesquareProperty</strong> is a USA-based real estate website specializing in property sales. Users can browse and purchase from an extensive collection of properties, conveniently categorized into various subcategories to enhance user experience.</p>
+    //   `,
+    //   technologyUsed: `
+
+    //     <ul>
+    //       <li>HTML</li>
+    //       <li>Tailwind CSS</li>
+    //       <li>React</li>
+    //       <li>React Router Dom</li>
+    //       <li>React Helmet</li>
+    //       <li>Firebase Authentication</li>
+    //     </ul>
+    //   `,
+    //   features: `
+
+    //     <ul>
+    //       <li>Extensive Property Listings</li>
+    //       <li>Expert Guidance and Resources</li>
+    //       <li>Responsive Design and User-Friendly Interface</li>
+    //     </ul>
+    //   `,
+    // },
     // Add more projects as needed
   ];
 

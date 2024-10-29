@@ -57,13 +57,18 @@ const SingleProject = ({
       </div>
 
       {isModalOpen && (
-        <div className='fixed inset-0 z-10 flex items-center justify-center overflow-y-auto bg-black bg-opacity-50'>
+        <div className='fixed inset-0 z-10 flex items-center justify-center overflow-y-auto dark:text-gray-700 '>
           <div className='bg-white rounded-lg shadow-lg max-w-md mx-auto p-6 overflow-y-auto'>
             <h2 className='text-xl font-bold mb-4'>Project Overview</h2>
             <div dangerouslySetInnerHTML={{ __html: overview }} />
 
             <h2 className='text-xl font-bold mt-6 mb-4'>Technology Used</h2>
             <div dangerouslySetInnerHTML={{ __html: technologyUsed }} />
+            {/* <ul>
+              {technologyUsed.map((tech, index) => {
+                return <li key={index}>{tech}</li>;
+              })}
+            </ul> */}
 
             <h2 className='text-xl font-bold mt-6 mb-4'>Features</h2>
             <div dangerouslySetInnerHTML={{ __html: features }} />
