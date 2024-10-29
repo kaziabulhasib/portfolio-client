@@ -21,6 +21,7 @@ const Contact = () => {
           console.log("SUCCESS!");
 
           toast.success("Your Message is sent");
+          e.target.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -35,8 +36,8 @@ const Contact = () => {
       {/* contact */}
       <section>
         <div className='container lg:px-48 px-6 py-12 mx-auto'>
-          <div className='lg:flex  lg:items-center lg:-mx-6 '>
-            <div className='w-full lg:py-28 py-6 px-8  mx-auto overflow-hidden bg-white rounded-lg shadow-2xl dark:bg-gray-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50'>
+          <div className='flex lg:flex-row flex-col  lg:items-center lg:-mx-6 '>
+            <div className='w-full  px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl dark:bg-gray-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50'>
               <h1 className='text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl  '>
                 Contact for more info
               </h1>
@@ -67,7 +68,7 @@ const Contact = () => {
               <div className='mt-6 w-80 md:mt-8'>
                 <h3 className='text-gray-600 dark:text-gray-300 '>Follow Me</h3>
 
-                <div className='flex mt-4 -mx-1.5 '>
+                <div className='flex mt-12 -mx-1.5 '>
                   <Link
                     to='https://github.com/kaziabulhasib'
                     className='mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400'
@@ -134,7 +135,7 @@ const Contact = () => {
                       placeholder='Message'></textarea>
                   </div>
 
-                  <button className='w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focMe:outline-none focMe:ring focMe:ring-blue-300 focMe:ring-opacity-50'>
+                  <button className='w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focMe:outline-none focMe:ring focMe:ring-blue-300 focMe:ring-opacity-50 dark:bg-slate-200 dark:hover:bg-slate-100 dark:text-gray-900'>
                     get in touch
                   </button>
                   <Toaster />
