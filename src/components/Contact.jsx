@@ -35,15 +35,15 @@ const Contact = () => {
       <SectionTitle title='Contact Me' text='Get in touch'></SectionTitle>
       {/* contact */}
       <section>
-        <div className='container lg:px-48 px-6 py-12 mx-auto'>
-          <div className='flex lg:flex-row flex-col lg:items-stretch lg:-mx-6'>
+        <div className='container  py-12 '>
+          <div className='flex lg:flex-row justify-center items-center flex-col lg:items-stretch lg:-mx-6'>
             {/* First child section */}
-            <div className='w-full px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl dark:bg-gray-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50 flex flex-col justify-center items-center '>
+            <div className=' flex flex-col justify-center items-center w-full px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl dark:bg-gray-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50  '>
               <h1 className='text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl'>
                 Contact for more info
               </h1>
 
-              <div className='mt-6 space-y-8 md:mt-8'>
+              <div className='mt-6 space-y-8 md:mt-8 w-[90%] mx-auto ml-12 lg:ml-24'>
                 <p className='flex items-center -mx-2'>
                   <IoLocationOutline className='text-blue-700 text-xl' />
                   <span className='mx-2 text-gray-700 truncate w-72 dark:text-gray-400'>
@@ -66,9 +66,9 @@ const Contact = () => {
                 </p>
               </div>
               <div className='mt-6 w-80 md:mt-8'>
-                <h3 className='text-gray-600 dark:text-gray-300'>Follow Me</h3>
+                {/* <h3 className='text-gray-600 dark:text-gray-300'>Follow Me</h3> */}
 
-                <div className='flex mt-12 -mx-1.5'>
+                <div className='flex justify-center mt-6 lg:mt8 -mx-1.5'>
                   <Link
                     to='https://github.com/kaziabulhasib'
                     className='mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400'
@@ -93,7 +93,7 @@ const Contact = () => {
             </div>
 
             {/* Second child section */}
-            <div className='mt-8 lg:mt-0 lg:w-1/2 lg:mx-6 flex flex-col'>
+            <div className='mt-8 lg:mt-0 lg:w-1/2  w-full lg:mx-6 flex flex-col'>
               <div className='w-full px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl dark:bg-gray-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50 flex flex-col'>
                 <h1 className='text-lg font-medium text-gray-700 dark:text-gray-300 text-center'>
                   What do you want to ask
@@ -117,7 +117,7 @@ const Contact = () => {
 
                   <div className='flex-1 mt-6'>
                     <label className='block mb-2 text-sm text-gray-600 dark:text-gray-200'>
-                      Email 
+                      Email
                     </label>
                     <input
                       type='email'

@@ -50,7 +50,7 @@ const Skills = () => {
   return (
     <div id='skills'>
       <SectionTitle title='Skills' text='Explore My'></SectionTitle>
-      <div className='grid lg:grid-cols-3 grid-cols-2  lg:gap-16 gap-6 px-6 lg:w-2/3 w-full mx-auto     lg:my-24 my-6'>
+      <div className='container grid lg:grid-cols-3 grid-cols-2  justify-items-stretch  lg:gap-16 gap-6 my-6'>
         {skillsData.map((skill, index) => (
           <div key={index}>
             <SkillsSubSec skill={skill.skill} img={skill.img}></SkillsSubSec>
