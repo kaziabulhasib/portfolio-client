@@ -6,3 +6,25 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.html {
+  scroll-behavior: smooth;
+}
+.projects-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  justify-content: flex-start;
+  gap: 32px;
+  /* font-size: 16px; */
+  padding: 0 16px;
+}
+@media screen and (min-width: 1024px) {
+  .projects-container {
+    gap: 72px;
+  }
+}
+.projects-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar  */
+}

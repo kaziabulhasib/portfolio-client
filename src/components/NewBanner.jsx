@@ -3,7 +3,7 @@ import Buttons from "./Buttons";
 
 const NewBanner = () => {
   return (
-    <header className=' '>
+    <header className=' ' id='banner'>
       <div className='flex lg:flex-row flex-col  justify-center items-center  lg:my-6 my-4'>
         <div className='w-full h-64 lg:w-1/4 lg:h-96 flex items-center'>
           <div
