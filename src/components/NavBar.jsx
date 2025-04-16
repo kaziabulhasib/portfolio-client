@@ -10,8 +10,8 @@ const NavBar = () => {
       <nav className='fixed z-10 top-0 right-0 w-full opacity-90 dark:opacity-75 bg-white shadow dark:bg-gray-800 '>
         <div className='container px-8 py-4 mx-auto md:flex md:justify-between md:items-center'>
           <div className='flex items-center justify-between'>
-            <Link to='/' className='text-3xl font-semibold dark:text-white'>
-              Hasib
+            <Link to='/' className='text-lg  dark:text-white'>
+              <span className='text-blue-500 text-3xl font-semibold'>H</span>asib
             </Link>
 
             {/* Mobile menu button */}
