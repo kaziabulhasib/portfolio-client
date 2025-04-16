@@ -25,6 +25,15 @@
       "overview": "<p><strong>Brusify</strong> is an art & craft store website where users can explore paintings from talented artists worldwide. Registered users have the ability to add their own paintings or purchase artwork directly from the platform.</p>",
       "technologyUsed": "<ul><li>HTML</li><li>Tailwind CSS</li><li>React</li><li>React Router Dom</li><li>Express</li><li>MongoDB</li><li>React Query</li><li>Firebase Authentication</li></ul>",
       "features": "<ul><li>Easy Registration</li><li>User Contribution</li><li>Art & Craft item purchase opportunity</li></ul>"
+    },
+    {
+      "title": "Brusify",
+      "img": "https://i.ibb.co/hM3qSw6/Brusify-snap-2.png",
+      "link": "https://asg10-type02.web.app/",
+      "code": "https://github.com/kaziabulhasib/ph-assignment10-client",
+      "overview": "<p><strong>Brusify</strong> is an art & craft store website where users can explore paintings from talented artists worldwide. Registered users have the ability to add their own paintings or purchase artwork directly from the platform.</p>",
+      "technologyUsed": "<ul><li>HTML</li><li>Tailwind CSS</li><li>React</li><li>React Router Dom</li><li>Express</li><li>MongoDB</li><li>React Query</li><li>Firebase Authentication</li></ul>",
+      "features": "<ul><li>Easy Registration</li><li>User Contribution</li><li>Art & Craft item purchase opportunity</li></ul>"
     }
     
    

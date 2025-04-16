@@ -17,14 +17,10 @@ body {
   scroll-behavior: smooth;
   justify-content: flex-start;
   gap: 32px;
-  /* font-size: 16px; */
   padding: 0 16px;
+  scrollbar-width: none; /* For Firefox */
 }
-@media screen and (min-width: 1024px) {
-  .projects-container {
-    gap: 72px;
-  }
-}
+
 .projects-container::-webkit-scrollbar {
-  display: none; /* Hide scrollbar  */
+  display: none; /* For Chrome, Edge, and Safari */
 }
