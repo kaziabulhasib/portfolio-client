@@ -1,94 +1,72 @@
-import SectionTitle from "./SectionTitle";
-import SingleProject from "./SingleProject";
+import { useRef } from "react";
 import projectData from "../assets/projectData.json";
-import { useEffect, useRef, useState } from "react";
+import SingleProject from "./SingleProject";
 
 const Projects = () => {
   const containerRef = useRef(null);
-  const autoScrollRef = useRef(null);
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const scrollLeft = useRef(0);
 
-  const [autoScrolling, setAutoScrolling] = useState(true);
+  const mouseDownHandler = (e) => {
+    isDragging.current = true;
+    containerRef.current.classList.add("active"); // optional: for dragging state
+    startX.current = e.pageX - containerRef.current.offsetLeft;
+    scrollLeft.current = containerRef.current.scrollLeft;
+  };
 
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
+  const mouseLeaveHandler = () => {
+    isDragging.current = false;
+    containerRef.current.classList.remove("active");
+  };
 
-    const handleWheel = (e) => {
-      // If the user scrolls using the mouse, cancel auto-scroll.
-      if (e.deltaY !== 0) {
-        // Stop auto scrolling when user intervenes.
-        if (autoScrollRef.current) {
-          clearInterval(autoScrollRef.current);
-          autoScrollRef.current = null;
-          setAutoScrolling(false); // turn off auto scroll
-        }
-        e.preventDefault();
-        container.scrollLeft += e.deltaY;
-      }
-    };
+  const mouseUpHandler = () => {
+    isDragging.current = false;
+    containerRef.current.classList.remove("active");
+  };
 
-    container.addEventListener("wheel", handleWheel, { passive: false });
-    return () => container.removeEventListener("wheel", handleWheel);
-  }, []);
+  const mouseMoveHandler = (e) => {
+    if (!isDragging.current) return;
+    e.preventDefault();
+    const x = e.pageX - containerRef.current.offsetLeft;
+    const walk = (x - startX.current) * 1; // adjust multiplier if needed
+    containerRef.current.scrollLeft = scrollLeft.current - walk;
+  };
 
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
+  // Touch event handlers (for mobile)
+  const touchStartHandler = (e) => {
+    isDragging.current = true;
+    containerRef.current.classList.add("active");
+    startX.current = e.touches[0].pageX - containerRef.current.offsetLeft;
+    scrollLeft.current = containerRef.current.scrollLeft;
+  };
 
-    const handleWheel = (e) => {
-      // Prevent vertical scroll and enable horizontal scroll
-      if (e.deltaY !== 0) {
-        e.preventDefault();
-        container.scrollLeft += e.deltaY;
-      }
-    };
+  const touchEndHandler = () => {
+    isDragging.current = false;
+    containerRef.current.classList.remove("active");
+  };
 
-    container.addEventListener("wheel", handleWheel);
+  const touchMoveHandler = (e) => {
+    if (!isDragging.current) return;
+    const x = e.touches[0].pageX - containerRef.current.offsetLeft;
+    const walk = (x - startX.current) * 1; // adjust multiplier if needed
+    containerRef.current.scrollLeft = scrollLeft.current - walk;
+  };
 
-    // Cleanup the event listener when the component unmounts
-    return () => container.removeEventListener("wheel", handleWheel);
-  }, []);
-  //
-  // Setting up the auto scroll behavior
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container || !autoScrolling) return;
-
-    // Start an interval to auto-scroll.
-    autoScrollRef.current = setInterval(() => {
-      // Adjust the scroll amount (2px here) and speed (16ms here ~60fps)
-      container.scrollLeft += 2;
-      // Optional: If you wish to loop the scroll, reset scrollLeft to 0 when it reaches the end.
-      if (
-        container.scrollLeft + container.clientWidth >=
-        container.scrollWidth
-      ) {
-        container.scrollLeft = 0;
-      }
-    }, 16); // This value gives approximately 60 frames per second
-
-    // Cleanup the interval when the component unmounts or autoScrolling changes.
-    return () => clearInterval(autoScrollRef.current);
-  }, [autoScrolling]);
   return (
-    <div id='projects'>
-      <SectionTitle title='Projects' text='Browse My'></SectionTitle>
-      <div
-        className='container projects-container lg:mt-16 mt-4 lg:mb-24 mb-6'
-        ref={containerRef}>
-        {projectData.map((project, index) => (
-          <SingleProject
-            key={index}
-            title={project.title}
-            img={project.img}
-            link={project.link}
-            overview={project.overview}
-            technologyUsed={project.technologyUsed}
-            features={project.features}
-            code={project.code}
-          />
-        ))}
-      </div>
+    <div
+      ref={containerRef}
+      onMouseDown={mouseDownHandler}
+      onMouseLeave={mouseLeaveHandler}
+      onMouseUp={mouseUpHandler}
+      onMouseMove={mouseMoveHandler}
+      onTouchStart={touchStartHandler}
+      onTouchEnd={touchEndHandler}
+      onTouchMove={touchMoveHandler}
+      className='projects-container overflow-x-scroll flex'>
+      {projectData.map((project, index) => (
+        <SingleProject key={index} {...project} />
+      ))}
     </div>
   );
 };
