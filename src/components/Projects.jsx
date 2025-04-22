@@ -69,7 +69,7 @@ const Projects = () => {
 
   return (
     <section className='py-12'>
-      <SectionTitle title='Projets ' subtitle='explore my recent' />
+      <SectionTitle title='Projets ' text='explore my recent' />
       <div className='w-full flex justify-center'>
         <div
           ref={containerRef}

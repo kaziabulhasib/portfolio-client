@@ -1,6 +1,6 @@
 const SectionTitle = ({ title, text }) => {
   return (
-    <div>
+    <div className='my-4 md:my-6 lg:my-8'>
       <p className='text-center lg:w-1/3 w-full  mx-auto text-gray-500 dark:text-slate-300 text-xl my-4 italic '>
         {text}
       </p>
