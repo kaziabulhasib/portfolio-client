@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import projectData from "../assets/projectData.json";
 import SingleProject from "./SingleProject";
 
@@ -52,6 +52,22 @@ const Projects = () => {
     const walk = (x - startX.current) * 1; // adjust multiplier if needed
     containerRef.current.scrollLeft = scrollLeft.current - walk;
   };
+
+  // Enable horizontal scrolling with the mouse wheel
+  useEffect(() => {
+    const container = containerRef.current;
+
+    const wheelHandler = (e) => {
+      e.preventDefault();
+      container.scrollLeft += e.deltaY; // Map vertical scroll to horizontal scroll
+    };
+
+    container.addEventListener("wheel", wheelHandler);
+
+    return () => {
+      container.removeEventListener("wheel", wheelHandler);
+    };
+  }, []);
 
   return (
     <div
