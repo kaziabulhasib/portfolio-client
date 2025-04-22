@@ -16,12 +16,14 @@ body {
   flex-wrap: nowrap;
   overflow-x: auto;
   scroll-behavior: smooth;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 32px;
   padding: 0 16px;
-  scrollbar-width: none; /* For Firefox */
+  scrollbar-width: none;
+  max-width: 1200px; /* Center on large screens */
+  width: 100%;
 }
 
 .projects-container::-webkit-scrollbar {
-  display: none; /* For Chrome, Edge, and Safari */
+  display: none;
 }
