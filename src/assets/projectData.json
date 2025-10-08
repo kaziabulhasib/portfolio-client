@@ -18,23 +18,15 @@
       "features": "<ul><li>Easy registration & user profiles</li><li>Powerful search with filters</li><li>Up/downvote system for community curation</li></ul>"
     },
     {
-      "title": "Brusify",
-      "img": "https://i.ibb.co/hM3qSw6/Brusify-snap-2.png",
-      "link": "https://asg10-type02.web.app/",
-      "code": "https://github.com/kaziabulhasib/ph-assignment10-client",
-      "overview": "<p><strong>Brusify</strong> is an art & craft store website where users can explore paintings from talented artists worldwide. Registered users have the ability to add their own paintings or purchase artwork directly from the platform.</p>",
-      "technologyUsed": "<ul><li>HTML</li><li>Tailwind CSS</li><li>React</li><li>React Router Dom</li><li>Express</li><li>MongoDB</li><li>React Query</li><li>Firebase Authentication</li></ul>",
-      "features": "<ul><li>Easy Registration</li><li>User Contribution</li><li>Art & Craft item purchase opportunity</li></ul>"
-    },
-    {
-      "title": "Demo Project",
-      "img": "https://i.ibb.co/hM3qSw6/Brusify-snap-2.png",
-      "link": "https://asg10-type02.web.app/",
-      "code": "https://github.com/kaziabulhasib/ph-assignment10-client",
-      "overview": "<p><strong>Brusify</strong> is an art & craft store website where users can explore paintings from talented artists worldwide. Registered users have the ability to add their own paintings or purchase artwork directly from the platform.</p>",
-      "technologyUsed": "<ul><li>HTML</li><li>Tailwind CSS</li><li>React</li><li>React Router Dom</li><li>Express</li><li>MongoDB</li><li>React Query</li><li>Firebase Authentication</li></ul>",
-      "features": "<ul><li>Easy Registration</li><li>User Contribution</li><li>Art & Craft item purchase opportunity</li></ul>"
+      "title": "ExpressMart",
+      "img": "public/images/expressmart.png",
+      "link": "https://expressmart-25kl.onrender.com/",
+      "code": "https://github.com/kaziabulhasib/neomart-mern",
+     "overview": "<p><strong>ExpressMart</strong> is a full-stack e-commerce platform featuring advanced product & category management, shopping cart functionality, and seamless checkout with Stripe payments. It includes robust user authentication with JWT tokens, an admin dashboard with sales analytics, and leverages Redis caching, Zustand state management, and Tailwind CSS for a secure, fast, and modern shopping experience.</p>",
+    "technologyUsed": "<ul><li>React</li><li>Tailwind</li><li>Zustand</li><li>Express</li><li>MongoDB</li><li>Mongoose</li><li>Redis</li><li>Jwt</li></ul>",
+      "features": "<ul><li>Full-Stack E-Commerce Core features</li><li>Admin & Analytics Capabilities</li><li>Performance, Security & Modern Tech Stack</li></ul>"
     }
+    
     
    
   ]
